@@ -16,7 +16,7 @@
 
 Atlas is a [...]
 
-Running into a problem or need help with something? [Check out the Documentation](https://github.com/0zbug/Atlas). If you can't find anything, or would like to suggest something, please [submit an issue](https://github.com/0zbug/Atlas/issues).
+## Preview
 
 ## Frequently Asked Questions
 
@@ -40,3 +40,6 @@ Please feel free to fork and make a pull request if you find any bugs or fix any
 
 > [!CAUTION]
 > Obfuscated code is absolutely not permitted in official addons
+
+Running into a problem or need help with something? [Check out the Documentation](https://github.com/0zbug/Atlas). If you can't find anything, or would like to suggest something, please [submit an issue](https://github.com/0zbug/Atlas/issues).
+
