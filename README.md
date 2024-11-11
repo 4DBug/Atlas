@@ -3,7 +3,7 @@
 > Unoffical plugins, libraries and themes may contain malcious code, please look at the code before adding it to your sources.
 
 <p align="center">
-    <img src="https://raw.github.com/0zBug/Atlas/refs/heads/main/Assets/Atlas.svg" width="420">
+    <img src="https://raw.github.com/0zBug/Atlas/refs/heads/main/Assets/AtlasBanner.svg" width="420">
 </p>
 
 <div align="center">
