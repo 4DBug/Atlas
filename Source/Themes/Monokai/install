@@ -1,0 +1,11 @@
+{
+  "type": "Theme",
+  "name": "Theme",
+  "description": "Description",
+  "creator": "4DBug",
+  "version": "v1.0.0",
+  "README": "../README.md",
+  "config": "../config.lua",
+  "source": "../main.lua",
+  "dependencies": []
+}
