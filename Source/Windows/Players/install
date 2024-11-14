@@ -1,7 +1,7 @@
 {
   "type": "Window",
-  "name": "Name",
-  "description": "Description",
+  "name": "Players",
+  "description": "Playerlist and Player info.",
   "creator": "4DBug",
   "version": "v1.0.0",
   "README": "../README.md",

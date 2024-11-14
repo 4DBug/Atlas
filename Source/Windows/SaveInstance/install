@@ -1,7 +1,7 @@
 {
   "type": "Window",
-  "name": "Name",
-  "description": "Description",
+  "name": "Save Instance",
+  "description": "Tool for saving games.",
   "creator": "4DBug",
   "version": "v1.0.0",
   "README": "../README.md",

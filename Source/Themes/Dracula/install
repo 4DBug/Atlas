@@ -1,7 +1,7 @@
 {
   "type": "Theme",
-  "name": "Theme",
-  "description": "Description",
+  "name": "Dracula",
+  "description": "Dracula color theme.",
   "creator": "4DBug",
   "version": "v1.0.0",
   "README": "../README.md",

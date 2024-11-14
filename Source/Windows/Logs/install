@@ -1,7 +1,7 @@
 {
   "type": "Window",
-  "name": "Name",
-  "description": "Description",
+  "name": "Logs",
+  "description": "Tools for chat logs, join logs, audio logs and animation logs.",
   "creator": "4DBug",
   "version": "v1.0.0",
   "README": "../README.md",
