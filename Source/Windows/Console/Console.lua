@@ -1,6 +1,4 @@
 
-return function(ImGui)
-    return {
-        
-    }
+return function()
+
 end

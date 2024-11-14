@@ -1,0 +1,10 @@
+{
+  "type": "Window",
+  "name": "Console",
+  "description": "Displays output messages from the client w/ optional redirects.",
+  "creator": "4DBug",
+  "version": "v1.0.0",
+  "README": "../README.md",
+  "config": "../config.lua",
+  "source": "../console.lua"
+}
