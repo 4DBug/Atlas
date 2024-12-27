@@ -18,6 +18,10 @@ Atlas is a manager for devtools and utilties, based on an Immediate mode GUI Lib
 
 ## Preview
 
+<p align="center">
+    <img src="https://raw.github.com/0zBug/Atlas/refs/heads/main/Assets/Atlas.svg](https://github.com/4DBug/Atlas/blob/main/Assets/AtlasUI.png?raw=true">
+</p>
+
 ## Frequently Asked Questions
 
 **Q:**
