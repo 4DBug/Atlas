@@ -30,10 +30,6 @@ Atlas is a manager for devtools and utilties, based on an Immediate mode GUI Lib
 
 ## Frequently Asked Questions
 
-**Q:**
-
-**A:**
-
 > Q: **ping?**
 
   A: **pong!**
@@ -42,12 +38,16 @@ Atlas is a manager for devtools and utilties, based on an Immediate mode GUI Lib
 
 ## Features
 
-- Feature
-- Feature
+- Extendable
+- Open Source
+- Performant
+- ...
 
 ----
 
 ## Usage
+
+This project is still in the making, you can't use it yet.
 
 ----
 
