@@ -5,10 +5,8 @@ return {
     Version = "v1.0.0",
     Creator = "4DBug",
     Callback = function()
-        ImGui:Connect(function()
-            ImGui.Window({"Lorem Ipsum"})
-                ImGui.Text({"Lorem Ipsum odor amet."})
-            ImGui.End()
-        end)
+        ImGui.Window({"Lorem Ipsum"})
+            ImGui.Text({"Lorem Ipsum odor amet."})
+        ImGui.End()
     end
 }
