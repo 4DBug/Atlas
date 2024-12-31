@@ -1,7 +1,7 @@
 return {
     Type = "Window",
     Name = "Executor",
-    Description = "Lorem ipsum odor amet, consectetuer adipiscing elit. Vehicula eleifend donec erat porta accumsan maecenas vestibulum.",
+    Description = "VERY BUGGY TEMPORARY Executor UI",
     Version = "v1.0.0",
     Creator = "4DBug",
     Data = {},
