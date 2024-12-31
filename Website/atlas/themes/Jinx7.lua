@@ -1,7 +1,7 @@
 return {
     Type = "Theme",
     Name = "Jinx7",
-    Description = "Jinx7 Theme. Based off Jinx7 (Those who know, know).",
+    Description = "Jinx7 Theme. Based off Jinx7 (Those who know).",
     Version = "v1.0.0",
     Creator = "Miller/Frog",
     Theme = {
