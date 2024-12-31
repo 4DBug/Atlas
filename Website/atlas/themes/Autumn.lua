@@ -1,7 +1,7 @@
 return {
     Type = "Theme",
     Name = "Autumn",
-    Description = "Autumn theme, based off my flua theme.",
+    Description = "Autumn theme, based off my flua theme. (Requested by p4re)",
     Version = "v1.0.0",
     Creator = "Miller/Frog",
     Theme = {
