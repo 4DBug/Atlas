@@ -1,3 +1,4 @@
+
 return {
     Type = "Window",
     Name = "Test",
@@ -5,8 +6,7 @@ return {
     Version = "v1.0.0",
     Creator = "4DBug",
     Callback = function()
-        ImGui.Window({"Lorem Ipsum"})
-            ImGui.Text({"Lorem Ipsum odor amet."})
-        ImGui.End()
+        ImGui.Text({"Lorem Ipsum odor amet."})
+        ImGui.Custom(Color3.fromHSV(os.clock() % 1, 1, 1))
     end
 }
