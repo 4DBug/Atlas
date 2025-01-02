@@ -71,10 +71,12 @@ local Players = game:GetService("Players")
 
 local ChatLogsEnabled = true
 local ChatLogs = {}
+local RawLogs = {}
 
 local function ChatLog(Player)
     Player.Chatted:Connect(function(Message)
         if ChatLogsEnabled then
+            table.insert(RawLogs, string.format("%s [%s]: %s", FormattedTime(), Player.Name, Message))
             table.insert(ChatLogs, string.format("%s [<font color=\"%s\">%s</font>]: %s", FormattedTime(), ToHex(NameColor(Player.Name)), Player.Name, Message))
         end
     end)
@@ -116,6 +118,20 @@ return {
         
         ImGui.RenderMarkup(ChatLogs)
         ]]--
+
+        ImGui.SameLine()
+            if ImGui.Button({ChatLogsEnabled and "Disable" or "Enable"}).clicked() then
+                ChatLogsEnabled = not ChatLogsEnabled
+            end
+
+            if ImGui.Button({"Clear"}).clicked() then
+                table.clear(ChatLogs)
+            end
+
+            if ImGui.Button({"Save to File"}).clicked() then
+                writefile(string.format("%s-%s.clog.txt", FormattedTime():gsub(":", "-"), game.Name), table.concat(RawLogs, "\n"))
+            end
+        ImGui.End()
 
         for _, Log in next, ChatLogs do
             ImGui.Text({Log, true, nil, true})

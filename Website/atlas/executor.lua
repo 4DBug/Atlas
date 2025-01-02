@@ -7,6 +7,9 @@ return {
     Data = {},
     Callback = function(Executor, deltaTime)
         Executor.Data.Index = (Executor.Data.Index or 0) + deltaTime
+
+        --[[
+        Executor.Data.Index = (Executor.Data.Index or 0) + deltaTime
         Executor.Data.Tabs = Executor.Data.Tabs or {}
         
         if #Executor.Data.Tabs == 0 then
@@ -17,11 +20,11 @@ return {
                 }
             }
         end
+        ]]--
 
-        ImGui.Text({math.floor(Executor.Data.Index)})
+        local Content = ImGui.State(Executor.Data.Content or "print(\"Hello, World!\")")
 
-        local Content = ImGui.State(Executor.Data.Tabs[1].Content)
-
+        --[[
         ImGui.TabBar()
             for _, Tab in next, Executor.Data.Tabs do
                 local Tab = ImGui.Tab(Tab.Name)
@@ -44,20 +47,34 @@ return {
             if ImGui.Tab("+").clicked() then
                 table.insert(Executor.Data.Tabs, {
                     {
-                        Name = "Script",
+                        Name = "Script" .. #Executor.Data.Tabs + 1,
                         Content = "print(\"Hello, World!\")"
                     }
                 })
             end
             ImGui.End()
         ImGui.End()
+        ]]--
+
+        ImGui.Text({Executor.Data.Index})
+
+        ImGui.PushConfig({ContentHeight = UDim.new(0, -32), ContentWidth = UDim.new(1, 0)})
+            ImGui.InputText({"", "", false, true}, {text = Content})
+        ImGui.PopConfig()
+
+        Executor.Data.Content = Content:get()
 
         ImGui.SameLine()
             if ImGui.Button("Execute").clicked() then
-                loadstring(Content:get())()
+                task.spawn(function()
+                    loadstring(Content:get())()
+                end)
             end
 
-            ImGui.Button("Clear")
+            if ImGui.Button("Clear").clicked() then
+                Content:set("")
+            end
+            
             ImGui.Button("Open File")
             ImGui.Button("Save File")
         ImGui.End()
