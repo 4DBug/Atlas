@@ -5,7 +5,9 @@ return {
     Version = "v1.0.0",
     Creator = "4DBug",
     Theme = {
-        TextColor = Color3.fromRGB(216, 222, 233), -- Snow Storm 1
+        TextColor = Color3.fromRGB(255,255,255), -- Snow Storm 1
+        TextStrokeTransparency = 0,
+        TextStrokeColor = Color3.fromRGB(0, 0, 0),
         TextTransparency = 0,
         TextDisabledColor = Color3.fromRGB(129, 161, 193), -- Polar Night 2
         TextDisabledTransparency = 0,
